@@ -30,12 +30,13 @@
 #include "sdkconfig.h"
 
 #ifdef CONFIG_MPU_I2C
+/*
 #if !defined I2CBUS_COMPONENT_TRUE
 #error ''MPU component requires I2Cbus library. \
 Make sure the I2Cbus library is included in your components directory. \
 See MPUs README.md for more information.''
 #endif
-
+*/
 #include "I2Cbus.hpp"
 
 #elif CONFIG_MPU_SPI
